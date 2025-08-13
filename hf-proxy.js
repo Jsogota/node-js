@@ -11,6 +11,10 @@ const HF_URL = `https://api-inference.huggingface.co/models/${HF_MODEL}`;
 
 app.use(express.json());
 
+app.get('/api/assistant', (req, res) => {
+  res.json({ status: 'ok', message: 'Grand Tech AI backend is running. Use POST to interact.' });
+});
+
 app.post('/api/assistant', async (req, res) => {
   try {
     const userText = req.body.message;
@@ -40,3 +44,4 @@ app.post('/api/assistant', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Hugging Face proxy server running on http://localhost:${PORT}`);
 });
+
