@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+  <style>
+    /* ===== General Styles ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+  background-color: #18181b;
+  color: #e5e7eb;
+      line-height: 1.6;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+  color: #6366f1;
+    }
+    p {
+      font-size: 1rem;
+      max-width: 600px;
+    }
+
+  /* ===== ABOUT SECTION ===== */
+
+    /* ===== ABOUT SECTION ===== */
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+    }
+    .about-section .text-content {
+      flex: 1;
+      min-width: 300px;
+      animation: fadeInLeft 1.2s ease-in-out;
+    }
+    .about-section .image-content {
+      flex: 1;
+      min-width: 250px;
+      display: flex;
+      justify-content: center;
+    }
+    .about-section img {
+      max-width: 350px;
+      height: auto;
+      border-radius: 12px;
+  border: 2px solid #6366f1;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    /* Make section 1 image smaller */
+    #brand-story .image-content img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+    }
+    .about-section img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 1);
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeInLeft {
+      from {opacity: 0; transform: translateX(-50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+    @keyframes fadeInRight {
+      from {opacity: 0; transform: translateX(50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-section img {
+        max-width: 250px;
+      }
+      nav {
+        display: none; /* can replace with hamburger later */
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="https://i.ibb.co/HLTYSygS/yoeli.png" alt="Grand Tech Solutions Logo">
+        </div>
+        <nav>
+          <ul class="nav-links">
+                    <li><a href="index.html" onclick="document.body.style.transition='opacity 0.5s';document.body.style.opacity=0;setTimeout(()=>location.href='index.html',500)">Home</a></li>
+            <li><a href="#services">Services</a>
+            </li>
+            <li><a href="about.html" onclick="document.body.style.transition='opacity 0.5s';document.body.style.opacity=0;setTimeout(()=>location.href='about.html',500)">About Us</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="tel:+254112767560" class="btn-primary">
+          <i class="fas fa-phone-alt"></i> Call: +254 112 767 560
+        </a>
+      </div>
+    </header>
+  <!-- SECTION 1: OUR BRAND STORY -->
+  <section id="brand-story" class="about-section" style="background: linear-gradient(135deg, #27272a, #52525b);">
+    <div class="text-content">
+      <h2>Our Brand Story</h2>
+      <p>
+        At <strong>Grand Tech Solutions</strong>, our journey began with a simple mission — to empower businesses 
+        and individuals with reliable, cutting-edge technology.  
+        From humble beginnings, we have grown into a trusted name in the tech industry, delivering services 
+        that merge innovation, efficiency, and affordability.  
+        Every step we take is guided by our passion for excellence and our commitment to our clients’ success.
+      </p>
+    </div>
+    <div class="image-content" style="animation: fadeInRight 1.2s ease-in-out;">
+  <a href="https://ibb.co/8vVWSwm"><img src="https://i.ibb.co/wG19xqd/tai-bui-Hz-VBe-8frwc-unsplash.jpg" alt="Computer Repairs & Cyber Services" border="0"></a>
+    </div>
+  </section>
+<!-- SECTION 2: YOUR BUSINESS MODEL -->
+<section id="business-model" class="about-section" style="background: linear-gradient(135deg, #334155, #64748b);">
+  <div class="image-content" style="animation: fadeInLeft 1.2s ease-in-out;">
+<a href="https://ibb.co/vx5MHDDH"><img src="https://i.ibb.co/8D3Q0XX0/estee-janssens-z-Eqk-UMi-Mx-MI-unsplash.jpg" alt="Business Model" border="0"></a>
+  </div>
+  <div class="text-content" style="animation: fadeInRight 1.2s ease-in-out;">
+    <h2>Your Business Model</h2>
+    <p>
+      At <strong>Grand Tech Solutions</strong>, our business model is built on three pillars: 
+      <em>innovation</em>, <em>affordability</em>, and <em>customer-first service</em>.  
+      We offer a wide range of tech services under one roof, from high-quality printing and 
+      scanning to advanced computer repairs and internet solutions.  
+      By combining modern technology with personalized service, we ensure that 
+      every customer receives value beyond their expectations.
+    </p>
+  </div>
+</section>
+<!-- SECTION 3: WHOM WE SERVE -->
+<section id="whom-we-serve" class="about-section" style="background: linear-gradient(135deg, #292524, #6366f1);">
+  <div class="text-content" style="animation: fadeInLeft 1.2s ease-in-out;">
+    <h2>Whom We Serve</h2>
+    <p>
+      We proudly serve a diverse range of clients, including:
+    </p>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>🏢 Small and medium-sized businesses looking for reliable tech support</li>
+      <li>🏫 Schools and educational institutions in need of ICT solutions</li>
+      <li>🏠 Home users seeking fast and affordable repairs</li>
+      <li>🌐 Organizations requiring secure network setups and cloud services</li>
+    </ul>
+    <p>
+      Whether you’re an individual, a growing startup, or an established company, 
+      <strong>Grand Tech Solutions</strong> is here to meet your needs with precision and care.
+    </p>
+  </div>
+  <div class="image-content" style="animation: fadeInRight 1.2s ease-in-out;">
+    <a href="https://ibb.co/60bkQz76"><img src="https://i.ibb.co/WvFLCZ4S/ben-white-83tk-HLPgg2-Q-unsplash-1.jpg" alt="Whom We Serve" border="0"></a> 
+    </div>
+</section>
+<!-- SECTION 4: HOW WE OPERATE -->
+<section id="how-we-operate" class="about-section" style="background: linear-gradient(135deg, #18181b, #334155); color: #e5e7eb;">
+  <div class="image-content" style="animation: fadeInLeft 1.2s ease-in-out;">
+    <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=800&q=80" alt="How We Operate">
+  </div>
+  <div class="text-content" style="animation: fadeInRight 1.2s ease-in-out;">
+    <h2>How We Operate</h2>
+    <p>
+      At <strong>Grand Tech Solutions</strong>, we follow a transparent and client-focused process to ensure your satisfaction at every step.
+    </p>
+    <ol style="padding-left: 1rem;">
+      <li>🔍 <strong>Consultation & Needs Analysis</strong> – We understand your exact requirements before starting.</li>
+      <li>🛠️ <strong>Custom Solutions</strong> – We design services tailored to your unique needs.</li>
+      <li>⚙️ <strong>Implementation</strong> – Efficient execution using the latest technology.</li>
+      <li>✅ <strong>Testing & Verification</strong> – Ensuring everything works perfectly before delivery.</li>
+      <li>🤝 <strong>Ongoing Support</strong> – Continued assistance for peace of mind.</li>
+    </ol>
+  </div>
+</section>
+<!-- SECTION 5: THE FACE OF YOUR BUSINESS -->
+<section id="face-of-business" class="about-section" style="background: linear-gradient(135deg, #312e81, #6366f1); color: #e5e7eb; padding: 3rem 1.5rem;">
+  <div class="text-content" style="animation: fadeInLeft 1.2s ease-in-out; max-width: 900px; margin: 0 auto; text-align: center;">
+    <h2>The Face of Our Business</h2>
+    <p>
+      Behind every successful solution is a dedicated team. At <strong>Grand Tech Solutions</strong>, our people are the heart of our company — experts who are passionate about technology and committed to delivering excellence.
+    </p>
+    <p>
+      We believe in personal connection, trust, and transparency. Meet the talented individuals who bring your projects to life.
+    </p>
+  </div>
+
+  <div class="team-grid">
+    <!-- Team Member 1 -->
+    <div class="team-member">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=300&q=80" alt="CEO">
+      <h3>John Mwangi</h3>
+      <p>Founder & CEO</p>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="team-member">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=300&q=80" alt="CTO">
+      <h3>Grace Achieng</h3>
+      <p>Chief Technology Officer</p>
+    </div>
+    <!-- Team Member 3 -->
+    <div class="team-member">
+      <img src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?auto=format&fit=crop&w=300&q=80" alt="Operations Manager">
+      <h3>Peter Otieno</h3>
+      <p>Operations Manager</p>
+    </div>
+    <!-- Team Member 4 -->
+    <div class="team-member">
+      <img src="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9?auto=format&fit=crop&w=300&q=80" alt="Customer Support Lead">
+      <h3>Mary Wanjiku</h3>
+      <p>Customer Support Lead</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-member {
+    background: #ffffff22;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .team-member:hover {
+    transform: translateY(-8px);
+    background: #ffffff44;
+  }
+
+  @media (min-width: 600px) {
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+<!-- SECTION 6: PERSUASIVE CONTENT -->
+<section id="persuasive-content" class="about-section" style="background: linear-gradient(135deg, #18181b, #6366f1); color: #e5e7eb; padding: 3rem 1.5rem;">
+  <div class="text-content" style="max-width: 900px; margin: 0 auto; text-align: center; animation: fadeInUp 1.2s ease-in-out;">
+    <h2>Why Clients Choose Grand Tech Solutions</h2>
+    <p>
+      We don’t just provide services — we deliver solutions that inspire trust and guarantee results.
+      Our commitment to excellence, innovation, and client satisfaction sets us apart in the tech industry.
+    </p>
+  </div>
+
+  <div class="persuasive-grid">
+    <div class="persuasive-card">
+      <div class="icon">⚡</div>
+      <h3>Fast & Reliable</h3>
+      <p>Quick turnaround times without sacrificing quality, ensuring your projects are delivered on schedule.</p>
+    </div>
+    <div class="persuasive-card">
+      <div class="icon">💡</div>
+      <h3>Innovative Solutions</h3>
+      <p>We embrace the latest technologies to give you cutting-edge solutions tailored to your needs.</p>
+    </div>
+    <div class="persuasive-card">
+      <div class="icon">🤝</div>
+      <h3>Customer-Centric</h3>
+      <p>We put your needs first, providing personalized support every step of the way.</p>
+    </div>
+    <div class="persuasive-card">
+      <div class="icon">📊</div>
+      <h3>Proven Track Record</h3>
+      <p>With hundreds of satisfied clients, our results speak for themselves.</p>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem;">
+  <a href="index.html#services" class="cta-button">Explore Our Services</a>
+  </div>
+</section>
+
+<style>
+  .persuasive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .persuasive-card {
+    background: #ffffff11;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .persuasive-card .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .persuasive-card:hover {
+    transform: translateY(-8px);
+    background: #ffffff22;
+  }
+
+  .cta-button {
+    background: #0ea5e9;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+  }
+
+  .cta-button:hover {
+    background: #38bdf8;
+    transform: scale(1.05);
+  }
+</style>
+<!-- SECTION 7: CONCRETE NUMBERS -->
+<section id="concrete-numbers" style="background: linear-gradient(135deg, #18181b, #6366f1); color: #e5e7eb; padding: 4rem 1.5rem; text-align: center;">
+  <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem; animation: fadeInUp 1s;">Our Impact in Numbers</h2>
+  <p style="max-width: 700px; margin: 0 auto; opacity: 0.9; animation: fadeInUp 1.2s;">
+    We believe in results that speak for themselves. Here's a snapshot of our journey and achievements over the years.
+  </p>
+
+  <div class="numbers-grid">
+    <div class="number-card">
+      <div class="icon">💼</div>
+      <h3 class="counter" data-target="500">0</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="number-card">
+      <div class="icon">👥</div>
+      <h3 class="counter" data-target="300">0</h3>
+      <p>Happy Clients</p>
+    </div>
+    <div class="number-card">
+      <div class="icon">🏆</div>
+      <h3 class="counter" data-target="15">0</h3>
+      <p>Awards Won</p>
+    </div>
+    <div class="number-card">
+      <div class="icon">🌍</div>
+      <h3 class="counter" data-target="10">0</h3>
+      <p>Years in Business</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .number-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .number-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #38bdf8;
+  }
+</style>
+
+<script>
+  // Counter Animation
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach(counter => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const increment = target / 100; // Speed control
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCounter, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  });
+</script>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="https://i.ibb.co/HLTYSygS/yoeli.png" alt="Grand Tech Solutions Logo" style="height:40px;vertical-align:middle;">
+          <span style="font-weight:600; font-size:1.2rem; margin-left:10px;">Grand Tech Solutions</span>
+        </div>
+        <div class="footer-contact">
+          <span><i class="fas fa-envelope"></i> info@grandtechsolutions.com</span>
+          <span style="margin-left:20px;"><i class="fas fa-phone-alt"></i> +254 112 767 560</span>
+        </div>
+        <div class="footer-social">
+          <a href="#" title="Facebook" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Twitter" class="footer-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Instagram" class="footer-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="LinkedIn" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-copy">&copy; 2025 Grand Tech Solutions. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <style>
+      .site-footer {
+        background: #1e293b;
+        color: #f1f5f9;
+        padding: 0.7rem 0 0.5rem 0;
+        text-align: center;
+        margin-top: 1.2rem;
+        font-family: 'Poppins', Arial, sans-serif;
+      }
+      .footer-content {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+      .footer-brand img {
+        height: 28px !important;
+      }
+      .footer-brand span {
+        font-size: 0.95rem !important;
+        margin-left: 6px !important;
+      }
+      .footer-contact span {
+        margin: 0 0.3rem;
+        font-size: 0.85rem;
+      }
+      .footer-social {
+        margin: 0.2rem 0;
+      }
+      .footer-icon {
+        color: #38bdf8;
+        margin: 0 5px;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .footer-icon:hover {
+        color: #0ea5e9;
+      }
+      .footer-copy {
+        font-size: 0.8rem;
+        color: #94a3b8;
+        margin-top: 0.2rem;
+      }
+    </style>
+<!-- ============ AI LIVE HELP (Grand Tech Solutions) ============ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  :root{
+    --gt-bg:#0f172a;        /* page bg */
+    --gt-panel:#0b1220;     /* chat panel */
+    --gt-accent:#38bdf8;    /* cyan */
+    --gt-accent-2:#0ea5e9;  /* cyan alt */
+    --gt-text:#e5f2ff;
+    --gt-muted:#9fb3c8;
+    --gt-bubble:#162134;
+    --gt-user:#1e293b;
+  }
+  .gt-chat-launcher{
+    position:fixed; right:18px; bottom:18px; z-index:9999;
+    width:56px; height:56px; border-radius:50%;
+    background:linear-gradient(135deg,var(--gt-accent-2),var(--gt-accent));
+    display:grid; place-items:center; color:#042233; cursor:pointer;
+    box-shadow:0 10px 24px rgba(0,0,0,.35), 0 0 16px rgba(56,189,248,.45);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .gt-chat-launcher:hover{ transform:translateY(-2px) scale(1.03); box-shadow:0 12px 28px rgba(0,0,0,.45), 0 0 24px rgba(56,189,248,.6); }
+  .gt-chat-panel{
+    position:fixed; right:18px; bottom:86px; z-index:9999;
+    width:min(380px,92vw); height:60vh; max-height:640px;
+    background:linear-gradient(180deg,var(--gt-panel),#0a1222 60%, #09101d 100%);
+    border:1px solid rgba(56,189,248,.25); border-radius:16px;
+    box-shadow:0 24px 60px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.02);
+    display:none; overflow:hidden;
+  }
+  .gt-open .gt-chat-panel{ display:flex; flex-direction:column; animation:gt-pop .2s ease; }
+  @keyframes gt-pop{ from{transform:translateY(8px); opacity:0} to{transform:translateY(0); opacity:1} }
+
+  .gt-head{
+    padding:12px 14px; display:flex; align-items:center; gap:10px; border-bottom:1px solid rgba(56,189,248,.18);
+    background:linear-gradient(135deg,rgba(14,165,233,.18),rgba(56,189,248,.1));
+  }
+  .gt-head .logo{
+    width:32px; height:32px; border-radius:8px; background:rgba(56,189,248,.2); display:grid; place-items:center; color:var(--gt-accent);
+    box-shadow:inset 0 0 10px rgba(56,189,248,.35);
+  }
+  .gt-head .title{ font-weight:700; color:var(--gt-text); }
+  .gt-head .sub{ font-size:.8rem; color:var(--gt-muted); }
+
+  .gt-body{ flex:1; overflow:auto; padding:16px; scrollbar-width:thin; }
+  .gt-msg{ display:flex; gap:10px; margin-bottom:12px; }
+  .gt-bot .gt-bbl{
+    background:var(--gt-bubble); border:1px solid rgba(56,189,248,.15);
+    color:var(--gt-text);
+  }
+  .gt-user{ justify-content:flex-end; }
+  .gt-user .gt-bbl{
+    background:var(--gt-user); border:1px solid rgba(56,189,248,.12); color:#eaf6ff;
+  }
+  .gt-avatar{
+    width:28px; height:28px; flex:0 0 28px; border-radius:8px; display:grid; place-items:center;
+    background:rgba(56,189,248,.18); color:var(--gt-accent);
+  }
+  .gt-bbl{
+    max-width:80%; padding:10px 12px; border-radius:12px; line-height:1.45; font-size:.95rem;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    animation:gt-rise .18s ease;
+  }
+  @keyframes gt-rise{ from{transform:translateY(4px); opacity:.2} to{transform:translateY(0); opacity:1} }
+
+  .gt-quick{ display:flex; gap:8px; flex-wrap:wrap; padding:0 16px 8px 16px; }
+  .gt-chip{
+    background:transparent; border:1px solid rgba(56,189,248,.3); color:var(--gt-text);
+    padding:6px 10px; border-radius:999px; cursor:pointer; font-size:.85rem;
+    transition:all .18s ease;
+  }
+  .gt-chip:hover{ background:rgba(56,189,248,.12); transform:translateY(-1px); }
+
+  .gt-typing{ display:flex; align-items:center; gap:6px; color:var(--gt-muted); padding:0 16px 8px; font-size:.85rem; }
+  .gt-typing i{ animation:gt-pulse 1s infinite; }
+  @keyframes gt-pulse{ 0%,100%{opacity:.35} 50%{opacity:1} }
+
+  .gt-input{
+    border-top:1px solid rgba(56,189,248,.18); display:flex; gap:8px; padding:10px; background:rgba(2,6,23,.6);
+    backdrop-filter: blur(6px);
+  }
+  .gt-input input{
+    flex:1; background:#0b1626; color:var(--gt-text); border:1px solid rgba(56,189,248,.22);
+    border-radius:10px; padding:12px 12px; outline:none;
+  }
+  .gt-input button{
+    background:linear-gradient(135deg,var(--gt-accent-2),var(--gt-accent)); color:#042233; border:none; border-radius:10px;
+    padding:0 14px; font-weight:700; cursor:pointer; transition:transform .15s ease, box-shadow .15s ease;
+    box-shadow:0 10px 20px rgba(56,189,248,.25);
+  }
+  .gt-input button:hover{ transform:translateY(-1px); box-shadow:0 12px 24px rgba(56,189,248,.35); }
+  .gt-note{ font-size:.75rem; color:var(--gt-muted); text-align:center; padding:6px 0 10px; }
+</style>
+
+<div id="gt-widget">
+  <div class="gt-chat-launcher" id="gt-launch"><i class="fa-solid fa-message"></i></div>
+  <div class="gt-chat-panel" id="gt-panel" role="dialog" aria-label="AI Live Help">
+    <div class="gt-head">
+      <div class="logo"><i class="fa-solid fa-robot"></i></div>
+      <div>
+        <div class="title">Live Help • Grand Tech</div>
+        <div class="sub">Ask about services, pricing, or support</div>
+      </div>
+      <div style="margin-left:auto;">
+        <button id="gt-close" title="Close" style="background:transparent;border:none;color:var(--gt-text);font-size:1.1rem;cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+
+    <div class="gt-body" id="gt-body" tabindex="0" aria-live="polite"></div>
+
+    <div class="gt-quick" id="gt-quick">
+      <button class="gt-chip">Pricing & packages</button>
+      <button class="gt-chip">Computer repair timeline</button>
+      <button class="gt-chip">Printing & scanning rates</button>
+      <button class="gt-chip">Network setup quote</button>
+    </div>
+
+    <div class="gt-typing" id="gt-typing" style="display:none;"><i class="fa-solid fa-wave-square"></i> Typing…</div>
+
+    <div class="gt-input">
+      <input id="gt-input" type="text" placeholder="Type your question… (Press Enter)">
+      <button id="gt-send"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+    <div class="gt-note">AI assistant for Grand Tech Solutions. Replies may be AI-generated.</div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const DEMO_MODE = false; // now using Hugging Face backend
+  const els = {
+    root: document.getElementById('gt-widget'),
+    launch: document.getElementById('gt-launch'),
+    panel: document.getElementById('gt-panel'),
+    close: document.getElementById('gt-close'),
+    body: document.getElementById('gt-body'),
+    typing: document.getElementById('gt-typing'),
+    input: document.getElementById('gt-input'),
+    send: document.getElementById('gt-send'),
+    quick: document.getElementById('gt-quick'),
+  };
+
+  // open/close
+  const toggle = (open) => {
+    if(open){ document.body.classList.add('gt-open'); }
+    else{ document.body.classList.remove('gt-open'); }
+  };
+  els.launch.addEventListener('click', () => toggle(true));
+  els.close.addEventListener('click', () => toggle(false));
+
+  // message helpers
+  const addMsg = (role, html) => {
+    const row = document.createElement('div');
+    row.className = 'gt-msg ' + (role === 'user' ? 'gt-user' : 'gt-bot');
+    if(role !== 'user'){
+      const av = document.createElement('div'); av.className = 'gt-avatar'; av.innerHTML = '<i class="fa-solid fa-robot"></i>'; row.appendChild(av);
+    }
+    const bbl = document.createElement('div'); bbl.className = 'gt-bbl'; bbl.innerHTML = html;
+    if(role === 'user'){
+      row.appendChild(bbl);
+    }else{
+      row.appendChild(bbl);
+    }
+    els.body.appendChild(row);
+    els.body.scrollTop = els.body.scrollHeight;
+    // save
+    const history = JSON.parse(localStorage.getItem('gt-history') || '[]');
+    history.push({role, html, t: Date.now()});
+    localStorage.setItem('gt-history', JSON.stringify(history.slice(-40)));
+  };
+
+  // restore history
+  const boot = () => {
+    const history = JSON.parse(localStorage.getItem('gt-history') || '[]');
+    if(history.length === 0){
+      addMsg('bot', `<strong>Hi! I'm your AI assistant.</strong><br>How can I help today? Ask about <em>repairs, printing rates, networking, cybersecurity</em> and more.`);
+    }else{
+      history.forEach(m => addMsg(m.role, m.html));
+    }
+  };
+
+  // demo responder
+  const demoReply = (q) => {
+  q = q.toLowerCase();
+  if(q.includes('services')) return `<strong>Our Services:</strong><br>• Printing & Photocopying<br>• Document Scanning<br>• Computer Repairs & Upgrades<br>• Internet & Cyber Services<br>• IT Support & Consulting<br>• Network Setup & Management<br>• Cybersecurity<br>• Cloud & Backup Solutions<br>• Server & Infrastructure Support<br>• Mobile Device Management<br>• IT Maintenance & Monitoring<br>How can I help you today?`;
+  if(q.includes('location')) return 'We are located at Grand Tech Plaza, 2nd Floor, Nairobi, Kenya.';
+  if(q.includes('contact')) return 'Contact us at <a href="mailto:info@grandtechsolutions.com">info@grandtechsolutions.com</a> or call <a href="tel:+254112767560">+254 112 767 560</a>.';
+  if(q.includes('price') || q.includes('rate') || q.includes('cost')) return '<strong>Pricing:</strong><br>• Printing: from KES 10/page (B/W)<br>• Scanning: from KES 20/page<br>• Computer diagnostics: KES 800<br>• Network setup: from KES 8,500<br>For a full quote, please specify your needs.';
+  if(q.includes('hours') || q.includes('open')) return 'We are open Monday to Saturday, 8am to 6pm.';
+  if(q.includes('cyber') || q.includes('internet')) return 'We offer fast browsing, online form filling, cyber assistance, and secure internet solutions.';
+  if(q.includes('repair') || q.includes('fix')) return 'We repair desktops, laptops, and provide IT support. Diagnostics are same-day; repairs typically 24–48 hrs. What device do you need help with?';
+  if(q.includes('cloud') || q.includes('backup')) return 'We provide secure cloud storage and automated backup solutions for businesses and individuals.';
+  if(q.includes('team') || q.includes('staff')) return 'Our team includes certified IT professionals, customer support specialists, and business consultants. Meet our team on the About page!';
+  if(q.includes('thank')) return 'You’re welcome! If you have more questions, just ask.';
+  if(q.includes('hello') || q.includes('hi')) return 'Hello! How can I assist you today?';
+  if(q.includes('appointment')) return 'To book an appointment, call us or use our contact form. We respond promptly during business hours.';
+  if(q.includes('support')) return 'Our support team is available Monday to Saturday, 8am–6pm. What issue can I help you with?';
+  return 'I am your AI assistant. Ask me anything about Grand Tech Solutions, our services, pricing, or support!';
+  };
+
+  const ask = async (text) => {
+    if(!text.trim()) return;
+    addMsg('user', text);
+    els.input.value = '';
+    els.typing.style.display = 'flex';
+
+    try {
+      let answer = '';
+      // Hugging Face backend call
+      const res = await fetch('http://localhost:3000/api/assistant', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text })
+      });
+      const data = await res.json();
+      answer = data.reply || 'Sorry, I could not get a reply.';
+      addMsg('bot', answer);
+    } catch(e) {
+      addMsg('bot', '⚠️ Network error. Please try again.');
+    } finally {
+      els.typing.style.display = 'none';
+    }
+  };
+
+  els.send.addEventListener('click', () => ask(els.input.value));
+  els.input.addEventListener('keydown', (e) => { if(e.key === 'Enter') ask(els.input.value); });
+  els.quick.addEventListener('click', (e) => { if(e.target.classList.contains('gt-chip')) ask(e.target.textContent); });
+
+  // init
+  boot();
+})();
+</script>
+<!-- ============ /AI LIVE HELP ============ -->
+
+</body>
+</html>
